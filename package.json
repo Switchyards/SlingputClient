@@ -1,0 +1,34 @@
+{
+  "name": "slingput.interface",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Slingput Interface",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/switchyards/SlingputClient.git"
+  },
+  "author": "Logan Allen & Azhar Bande-Ali",
+  "license": "Proprietary",
+  "bugs": {
+    "url": "https://github.com/switchyards/SlingputClient/issues"
+  },
+  "homepage": "https://github.com/switchyards/SlingputClient",
+  "dependencies": {},
+  "devDependencies": {
+    "browserify": "5.9.1",
+    "debowerify": "0.8.1",
+    "dimsum": "0.1.8",
+    "gulp-browserify": "0.5.0",
+    "gulp-concat": "2.3.4",
+    "gulp-inline-css": "0.2.7",
+    "gulp-jade": "0.7.0",
+    "gulp-minify-css": "0.3.7",
+    "gulp-rename": "1.2.0",
+    "jade": "1.5.0",
+    "jadeify": "2.5.0"
+  }
+}
