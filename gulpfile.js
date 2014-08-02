@@ -34,4 +34,9 @@ gulp.task("html-index", function () {
   .pipe(gulp.dest(distDir));
 });
 
-gulp.task("build", ["browserify", "html-index"]);
+gulp.task('css', function() {
+  gulp.src(['layout/styles/css/cover.css'])
+    .pipe(concat('app.css'))
+    .pipe(gulp.dest(cssDir))
+});
+gulp.task("build", ["browserify", "html-index", "css"]);
