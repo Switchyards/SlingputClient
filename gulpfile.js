@@ -6,6 +6,7 @@ var jade = require("gulp-jade");
 var rename = require("gulp-rename");
 
 var srcDir = "./app";
+var distDir = "./dist";
 var jsDir = distDir + "/js";
 var cssDir = distDir + "/css";
 
