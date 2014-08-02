@@ -4,7 +4,7 @@ section.section#head
       div.col-md-6.col-lg-6.col-md-offset-3.col-lg-offset-3.text-center.panel.vcenter
         h3 Slingput
         div.form
-          input(type="text", placeholder="Enter email address", ng-model="email")
-          button(ng-click="submitEmail()") Submit
+          input(type="text", placeholder="Enter email address", ng-model="email", class="form-control")
+          button(ng-click="submitEmail()", class="btn btn-success") Submit
   footer.text-center.footer
     p &#42;Your idea must be better than: {{randomIdea}}
