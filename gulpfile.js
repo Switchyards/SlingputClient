@@ -9,6 +9,7 @@ var srcDir = "./app";
 var distDir = "./dist";
 var jsDir = distDir + "/js";
 var cssDir = distDir + "/css";
+var imgDir = distDir + "/img";
 
 var files = {
   html: {
@@ -35,8 +36,13 @@ gulp.task("html-index", function () {
 });
 
 gulp.task('css', function() {
-  gulp.src(['layout/styles/css/cover.css'])
+  gulp.src(['layout/styles/css/cover.css', 'layout/styles/css/magister.css'])
     .pipe(concat('app.css'))
     .pipe(gulp.dest(cssDir))
 });
-gulp.task("build", ["browserify", "html-index", "css"]);
+
+gulp.task('img', function(){
+  gulp.src('img/mwsia-dark.jpg')
+  .pipe(gulp.dest(imgDir))
+});
+gulp.task("build", ["browserify", "html-index", "css", "img"]);
