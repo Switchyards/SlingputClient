@@ -26,12 +26,4 @@ module.exports = function (ngModule) {
       });
     }
   ]);
-
-  // From initial run.js file
-  ngModule.run(["$rootScope", "$location", "$http", "$state", function($rootScope, $location, $http, $state) {
-    return $rootScope.bodyClick = function(e) {
-      return $rootScope.$broadcast("body:click", e);
-    };
-  }
-  ]);
 };

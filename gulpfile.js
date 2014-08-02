@@ -10,12 +10,6 @@ var distDir = "./dist";
 var jsDir = distDir + "/js";
 var cssDir = distDir + "/css";
 
-var files = {
-  html: {
-    index: "./layout/index.jade"
-  },
-};
-
 gulp.task("browserify", function () {
   gulp.src("app/app.js", {entry: true})
   .pipe(browserify({
@@ -27,7 +21,7 @@ gulp.task("browserify", function () {
 });
 
 gulp.task("html-index", function () {
-  gulp.src(files.html.index)
+  gulp.src("./layout/index.jade")
   .pipe(jade({
     dev: false
   }))
@@ -39,4 +33,6 @@ gulp.task('css', function() {
     .pipe(concat('app.css'))
     .pipe(gulp.dest(cssDir))
 });
+
+
 gulp.task("build", ["browserify", "html-index", "css"]);
