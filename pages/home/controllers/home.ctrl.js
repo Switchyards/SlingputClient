@@ -8,7 +8,7 @@ module.exports = [
       ""
     ];
 
-    $scope.randomIdea = Math.floor(Math.random() * ideas.length);
+    $scope.randomIdea = ideas[Math.floor(Math.random() * ideas.length)];
     
     $scope.email = "";
     $scope.submitEmail = function() {
