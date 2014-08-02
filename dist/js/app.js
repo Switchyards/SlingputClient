@@ -68,8 +68,7 @@ module.exports = function (ngModule) {
     "$state",
     "$stateParams",
     "$timeout",
-    "$http",
-    function ($rootScope, $state, $stateParams, $timeout, $http) {
+    function ($rootScope, $state, $stateParams, $timeout) {
       $rootScope.$state = $state;
       $rootScope.$stateParams = $stateParams;
 
@@ -25478,7 +25477,9 @@ exports.rethrow = function rethrow(err, filename, lineno, str){
 });
 }).call(this,typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 },{}],10:[function(require,module,exports){
-//Controller for homepage.
+module.exports = function () {
+
+};
 
 },{}],11:[function(require,module,exports){
 

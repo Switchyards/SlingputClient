@@ -16,8 +16,7 @@ module.exports = function (ngModule) {
     "$state",
     "$stateParams",
     "$timeout",
-    "$http",
-    function ($rootScope, $state, $stateParams, $timeout, $http) {
+    function ($rootScope, $state, $stateParams, $timeout) {
       $rootScope.$state = $state;
       $rootScope.$stateParams = $stateParams;
 

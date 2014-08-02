@@ -1,1 +1,3 @@
-//Controller for homepage.
+module.exports = function () {
+
+};
