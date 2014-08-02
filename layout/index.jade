@@ -1,8 +1,7 @@
 doctype html
 html
   head
-    title {{pageTitle}}
+    title Slingput
+    script(type="text/javascript" src="js/app.js")
   body
-    h2 {{pageHeader}}
-    input(type="text", placeholder="{{signupFieldPlaceholder}}", name="signupField")
-    input(type="submit", value="{{signupButtonText}}")
+    ui-view(ng-controller="app:layout")

@@ -7,7 +7,7 @@ var pages = angular.module("slingput:pages", ["once"]);
 var components = angular.module("slingput:components", ["ngResource", "once"]);
 
 require("../components/components.js")(components);
-require("../layout/layout.js")(sections);
+require("../layout/layout.js")(pages);
 require("../pages/pages.js")(pages);
 
 var app = angular.module("app", [
@@ -29,7 +29,7 @@ app.config([
 app.run([
   "$rootScope",
   function ($rootScope) {
-    $scope.pageTitle = "Hella";
+    $rootScope.pageTitle = "Slingput";
   }
 ]);
 
