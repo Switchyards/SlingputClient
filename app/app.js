@@ -1,17 +1,15 @@
 require("angular");
-require("angular-resource");
 require("angular-ui-router");
 require("angular-once");
 
 var pages = angular.module("slingput:pages", ["once"]);
-var components = angular.module("slingput:components", ["ngResource", "once"]);
+var components = angular.module("slingput:components", ["once"]);
 
 require("../components/components.js")(components);
 require("../layout/layout.js")(pages);
 require("../pages/pages.js")(pages);
 
-var app = angular.module("app", [
-  "ngAnimate",
+var app = angular.module("slingput", [
   "ui.router",
   "once",
   "slingput:components",
@@ -23,13 +21,6 @@ app.config([
   function ($locationProvider) {
     $locationProvider.html5Mode(true);
     $locationProvider.hashPrefix("!");
-  }
-]);
-
-app.run([
-  "$rootScope",
-  function ($rootScope) {
-    $rootScope.pageTitle = "Slingput";
   }
 ]);
 
