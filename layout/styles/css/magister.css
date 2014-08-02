@@ -15,8 +15,6 @@ body {
 	line-height: 1.5em;
 	font-size:14px;
 	font-family: Helvetica, Arial, sans-serif;
-	color:#fff;
-	color:rgba(255,255,255,.8); 
 	font-weight: normal;
 }
 
@@ -125,101 +123,9 @@ body {
 }
 
 
-/********************************************************/
-/*                      Typography                      */
-/********************************************************/
-a { color:#fff; text-decoration: none; }
-a:hover, a:active { color:#fff; text-decoration: underline; }
-.lead { 
-	font-weight:normal;
-	font-size:1.5em;
-	line-height:1.2em;
-}
-
-.title,
-.subtitle { 
-	font-family: 'Wire One', Helvetica, Arial, sans-serif;
-	font-weight:normal;
-	font-size:7em;
-	margin-bottom:15px; 
-	color:#FDF9F4; 
-	line-height:1em;
-}
-.subtitle { 
-	line-height:.9em;
-	font-size:5.5em;
-	margin-top:0;
-	margin-bottom:40px; 
-}
-.tagline { 
-	font-size:1.4em;
-	line-height:1.3em;
-	font-weight:normal;
-	margin-bottom:75px;
-}
-
-@media (max-width: 767px) {
-	.lead { 
-		font-size:1.3em;
-	}
-}
-
-
-/********************************************************/
-/*                   UI - Buttons                       */
-/********************************************************/
-.btn{
-	color:#333;
-	text-shadow: none;
-	text-decoration: none;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
-	border:0 none;
-}
-.btn:hover {
-	color:#000;
-}
-.btn-lg { 
-	padding:16px 30px;
-	font-size:inherit;
-}
-
-.btn-link {
-	color:rgba(255,255,255,.8);
-}
-.btn-link:hover, .btn-link:focus, .btn-link:active {
-	color:#fff
-}
-.btn-default {
-	background: rgba(255,255,255,.5);
-}
-.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active {
-	background: rgba(255,255,255,.8);
-}
-.btn-primary {
-	background: rgba(255,255,255,.2);
-}
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary:active {
-	background: rgba(255,255,255,.5);
-}
 
 
 
-/********************************************************/
-/*                 UI - Thumbnails                      */
-/********************************************************/
-.thumbnail {
-	background-color: rgba(255,255,255,.2);
-	border: 0 none;
-	padding:10px;
-	-webkit-border-radius: 2px;
-	   -moz-border-radius: 2px;
-	        border-radius: 2px;
-}
-.thumbnail .caption {
-	color: inherit;
-}
 
 
 
