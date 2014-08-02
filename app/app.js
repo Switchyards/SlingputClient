@@ -6,9 +6,9 @@ require("angular-once");
 var pages = angular.module("slingput:pages", ["once"]);
 var components = angular.module("slingput:components", ["ngResource", "once"]);
 
-require("components/components.js")(components);
-require("layout/layout.js")(sections);
-require("pages/pages.js")(pages);
+require("../components/components.js")(components);
+require("../layout/layout.js")(sections);
+require("../pages/pages.js")(pages);
 
 var app = angular.module("app", [
   "ngAnimate",

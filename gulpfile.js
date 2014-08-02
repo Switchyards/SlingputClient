@@ -10,6 +10,12 @@ var distDir = "./dist";
 var jsDir = distDir + "/js";
 var cssDir = distDir + "/css";
 
+var files = {
+  html: {
+    index: "./layout/index.jade"
+  },
+};
+
 gulp.task("browserify", function () {
   gulp.src("app/app.js", {entry: true})
   .pipe(browserify({
@@ -28,11 +34,4 @@ gulp.task("html-index", function () {
   .pipe(gulp.dest(distDir));
 });
 
-gulp.task("copy", function () {
-  gulp.src(files.copy.fonts)
-  .pipe(gulp.dest(distDir + "/fonts"));
-  gulp.src(files.copy.img)
-  .pipe(gulp.dest(distDir + "/img"));
-});
-
-gulp.task("build", ["browserify", "html-index", "copy"]);
+gulp.task("build", ["browserify", "html-index"]);

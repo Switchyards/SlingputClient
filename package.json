@@ -18,6 +18,10 @@
   },
   "homepage": "https://github.com/switchyards/SlingputClient",
   "dependencies": {
+    "angular": "1.2.19",
+    "angular-once": "0.1.8",
+    "angular-resource": "0.1.1",
+    "angular-ui-router": "0.2.10",
     "gulp": "3.8.7"
   },
   "devDependencies": {

@@ -8,7 +8,7 @@ module.exports = function (ngModule) {
       $stateProvider.state("home", {
         url: "/",
         controller: require("./controllers/home.ctrl.js"),
-        template: require("./templates/home.tmpl")
+        template: require("./templates/home.jade")
       });
 
     }
