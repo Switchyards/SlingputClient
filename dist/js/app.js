@@ -25477,9 +25477,12 @@ exports.rethrow = function rethrow(err, filename, lineno, str){
 });
 }).call(this,typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 },{}],10:[function(require,module,exports){
-module.exports = function () {
-
-};
+module.exports = [
+  "$scope",
+  function($scope) {
+    console.log("home controller loaded.");
+  }
+];
 
 },{}],11:[function(require,module,exports){
 
@@ -25507,7 +25510,7 @@ var buf = [];
 var jade_mixins = {};
 var jade_interp;
 
-buf.push("<h2>{{pageHeader}}<input type=\"text\" placeholder=\"{{signupFieldPlaceholder}}\" name=\"signupField\"/><input type=\"submit\" value=\"{{signupButtonText}}\"/></h2>");;return buf.join("");
+buf.push("<div class=\"container-fluid\"><div class=\"row\"><p>hey</p></div></div>");;return buf.join("");
 };
 },{"jade/runtime":9}],13:[function(require,module,exports){
 module.exports = function (ngModule) {

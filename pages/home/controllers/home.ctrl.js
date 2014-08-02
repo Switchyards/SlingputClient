@@ -1,3 +1,6 @@
-module.exports = function () {
-
-};
+module.exports = [
+  "$scope",
+  function($scope) {
+    console.log("home controller loaded.");
+  }
+];
